@@ -57,7 +57,7 @@ class Rectangle:
         if self.__height == 0 or self.__width == 0:
             return 0
         return 2 * (self.__width + self.__height)
-    
+
     @staticmethod
     def bigger_or_equal(rect_1, rect_2):
         """Return the Rectangle with the greater area.
@@ -74,7 +74,7 @@ class Rectangle:
         if rect_1.area() >= rect_2.area():
             return (rect_1)
         return (rect_2)
-    
+
     @classmethod
     def square(cls, size=0):
         """Return a new Rectangle with width and height equal to size.
@@ -82,7 +82,7 @@ class Rectangle:
             size (int): The width and height of the new Rectangle.
         """
         return cls(size, size)
-    
+
     def __str__(self):
         """Return the printable representation of the Rectangle.
         Represents the rectangle with the # character.
