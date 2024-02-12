@@ -1,5 +1,6 @@
-#!usr/bin/python3
-"""Define a base model class."""
+#!/usr/bin/python3
+
+"""Defines a base model class."""
 import json
 
 
