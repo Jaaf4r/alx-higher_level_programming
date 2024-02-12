@@ -5,10 +5,10 @@ from models.rectangle import Rectangle
 
 class Square(Rectangle):
     """Represent a square."""
-    
+
     def __init__(self, size, x=0, y=0, id=None):
         """Initialize a new Square.
-        
+
         Args:
             size (int): The size of the Square.
             x (int): The x coordinate of the new Square.
@@ -20,7 +20,7 @@ class Square(Rectangle):
     @property
     def size(self):
         return self.width
-    
+
     @size.setter
     def size(self, value):
         self.width = value
@@ -57,7 +57,7 @@ class Square(Rectangle):
                     self.y = k
 
     def __str__(self):
-        return "[Square] ({}) {}/{} - {}".format(self.id, self.x, 
+        return "[Square] ({}) {}/{} - {}".format(self.id, self.x,
                                                  self.y, self.width)
 
     def to_dictionary(self):

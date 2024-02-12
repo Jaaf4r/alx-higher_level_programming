@@ -146,7 +146,6 @@ class Rectangle(Base):
                 elif j == "y":
                     self.y = k
 
-    
     def to_dictionary(self):
         """Return thr dictionary representation of a Rectangle."""
         return {

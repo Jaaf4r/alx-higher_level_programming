@@ -2,6 +2,7 @@
 """Define a base model class."""
 import json
 
+
 class Base:
     """Base model.
 
@@ -28,7 +29,7 @@ class Base:
     @staticmethod
     def to_json_string(list_dictionaries):
         """Returns the JSON representation of list_disctionaries
-        
+
         Args:
             list_dictionaries (list): A list of dictionaries.
         """
@@ -36,10 +37,10 @@ class Base:
             return "[]"
         return json.dumps(list_dictionaries)
 
-    @classmethod    
+    @classmethod
     def save_to_file(cls, list_objs):
         """writes the JSON string representation of list_objs to a file.
-        
+
         Args:
             list_objs (list): A list of inherited base instances.
         """
